@@ -1,5 +1,17 @@
 # Writing papers using R Markdown
 
+```{r inCode, echo=FALSE, include=FALSE}
+# note that this and the next chunk should be included in every single Rmd file for blogging with blogR
+setHooks()
+```
+
+```{r makeOptions, post.options=TRUE, echo=FALSE, include=FALSE}
+.post_options <- list(title="Papers using Rmd",
+  									 author="Robert M Flight",
+										 date="2013-01-25|22:29|EST",
+										 categories=c("rmd", "writing", "knitr"))
+```
+
 ```{r knitrSetup, include=FALSE}
 # sets output for inline results nicely
 #knit_hooks$set(inline = identity) 
